@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-13T05:57:22.676Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="q4xHsS-y9FkQiCjKr3oh" version="17.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-13T06:29:32.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="IeEdKlLSI2x9P0UBDwa8" version="17.4.1" type="github">
   <diagram id="oZ7pe1yWG27_pTmirBZ8" name="第 1 页">
-    <mxGraphModel dx="1409" dy="1634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4149" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -142,6 +142,9 @@
         <mxCell id="ctjncfaqJde0dMd96rV1-46" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&amp;nbsp;AnnotationCacheOperationSource&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-40" y="565" width="240" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-47" target="ctjncfaqJde0dMd96rV1-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ctjncfaqJde0dMd96rV1-47" value="&lt;font style=&quot;font-size: 14px&quot;&gt;CacheInterceptor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-680" y="880" width="130" height="40" as="geometry" />
         </mxCell>
@@ -223,6 +226,44 @@
         </mxCell>
         <mxCell id="ctjncfaqJde0dMd96rV1-71" value="advisor.setAdvice(this.cacheInterceptor());" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-570" y="850" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-72" target="ctjncfaqJde0dMd96rV1-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-72" value="&lt;font style=&quot;font-size: 14px&quot;&gt;CacheAspectSupport&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-890" y="967.5" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-74" value="Spring 注册缓存管理器后，会对需要缓存方法对应的类进行 AOP 处理，&lt;br&gt;核心逻辑为自定了一个`MethodInterceptor`拦截器`CacheInterceptor`，&lt;br&gt;该拦截器会将方法调用转到`CacheAspectSupport.execute()`中。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-940" y="690" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-75" target="ctjncfaqJde0dMd96rV1-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-75" value="&lt;font style=&quot;font-size: 14px&quot;&gt;invoke&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-670.8199999999999" y="970" width="111.63" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-77" value="被注解如 @Cachable 标记的方法会进入&lt;br&gt;`CacheInterceptor.invoke()`方法" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="922.5" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-78" target="ctjncfaqJde0dMd96rV1-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="1070" />
+              <mxPoint x="540" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-78" target="ctjncfaqJde0dMd96rV1-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-78" value="&lt;font style=&quot;font-size: 14px&quot;&gt;execute&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-870.8199999999999" y="1050" width="111.63" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-83" value="Collection&amp;lt;CacheOperation&amp;gt; operations = cacheOperationSource.getCacheOperations(method, targetClass);" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-670.82" y="1080" width="690" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-84" value="&lt;font style=&quot;font-size: 14px&quot;&gt;execute(CacheOperationInvoker invoker, Method method, CacheAspectSupport.CacheOperationContexts contexts)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1000" y="1140" width="370" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
