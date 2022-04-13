@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-13T06:29:32.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="IeEdKlLSI2x9P0UBDwa8" version="17.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-13T07:11:00.264Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="Y6LGiNwjh7onPu3VsiE2" version="17.4.1" type="github">
   <diagram id="oZ7pe1yWG27_pTmirBZ8" name="第 1 页">
     <mxGraphModel dx="4149" dy="1358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -262,8 +262,38 @@
         <mxCell id="ctjncfaqJde0dMd96rV1-83" value="Collection&amp;lt;CacheOperation&amp;gt; operations = cacheOperationSource.getCacheOperations(method, targetClass);" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-670.82" y="1080" width="690" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;fontColor=#FF0000;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-84" target="ctjncfaqJde0dMd96rV1-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ctjncfaqJde0dMd96rV1-84" value="&lt;font style=&quot;font-size: 14px&quot;&gt;execute(CacheOperationInvoker invoker, Method method, CacheAspectSupport.CacheOperationContexts contexts)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-1000" y="1140" width="370" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-86" value="&lt;font color=&quot;#ff0000&quot;&gt;处理@Cacheable, @CachePut, @CacheEvict @Caching这些注解的方法&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-626" y="1160" width="470" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-87" target="ctjncfaqJde0dMd96rV1-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-87" value="&lt;font style=&quot;font-size: 14px&quot;&gt;CacheOperationContexts&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1165" y="1230" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-89" target="ctjncfaqJde0dMd96rV1-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-89" value="&lt;font style=&quot;font-size: 14px&quot;&gt;CacheOperationContext&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1165" y="1350" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ctjncfaqJde0dMd96rV1-91" target="ctjncfaqJde0dMd96rV1-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-91" value="&lt;font style=&quot;font-size: 14px&quot;&gt;getCaches&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1132.5" y="1450" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-93" value="&lt;font style=&quot;font-size: 14px&quot;&gt;resolveCaches&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1132.5" y="1550" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctjncfaqJde0dMd96rV1-95" value="Cache cache = this.getCacheManager().getCache(cacheName);" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-1560" y="1565" width="420" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
