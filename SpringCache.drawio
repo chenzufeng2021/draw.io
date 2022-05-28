@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-14T03:49:53.120Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="8nc7lk3CeaEhvurveAam" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-28T01:29:03.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36 Edg/101.0.1210.53" etag="_9iFAsqffB-6qUsLynOu" version="18.1.3" type="github" pages="2">
   <diagram id="oZ7pe1yWG27_pTmirBZ8" name="第 1 页">
-    <mxGraphModel dx="3261" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5427" dy="1637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -409,6 +409,17 @@
         </mxCell>
         <mxCell id="hxEiOoujD53zBDRLyNOb-1" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;根据 @EnableCaching 配置的模式，&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;选择不同的配置类型，默认是PROXY模式。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;它完成了一件事：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;font color=&quot;#ff0000&quot;&gt;向容器内注入了`AutoProxyRegistrar`和`ProxyCachingConfiguration`这两个Bean&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-300" y="110" width="510" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="F3qRP0bXwRs-rqtjfTF7" name="第 2 页">
+    <mxGraphModel dx="780" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hkjvAdj0trzACrMnmZQn-1" value="调用SpringApplication的run方法" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
